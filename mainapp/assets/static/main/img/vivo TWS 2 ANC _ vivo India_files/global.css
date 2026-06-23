@@ -1,0 +1,96 @@
+/**
+ * Powered by uimix.com;
+ * Vivo product project - 产品库页面开发框架;
+ * Version: 3.2.4;
+ * Released on: 2021-09-08;
+ */
+
+@charset "UTF-8";
+
+.hide {
+  display: none;
+}
+
+.gb-lang-hk_zh .stage1 {
+  font-family: languageFont;
+}
+.tws2-experience .section .title .data-items ul li p {
+  color: #000;
+}
+
+.gb-lang-hk_zh .stage1 .section .title .main-title,
+.gb-lang-hk_zh .stage1 .section .title .vice-title {
+  font-weight: 700!important;
+  /* font-family: "AvenirNext-DemiBold PR",languageFont; */
+  font-family: vivotypeEN-Bold,Microsoft YaHei,PingFang SC,Open Sans,Arial,Hiragino Sans GB,SimSun,sans-serif;
+}
+
+.gb-lang-hk_zh .stage1 .section .title .innertips,
+.gb-lang-hk_zh .stage1 .section .title p.intro {
+  /* font-family: AvenirNext,languageFont; */
+  font-family: vivotypeEN-Medium,Microsoft YaHei,PingFang SC,Open Sans,Arial,Hiragino Sans GB,SimSun,sans-serif;
+}
+
+.gb-lang-hk_zh .stage1 strong {
+  font-weight: 700!important;
+  /* font-family: "AvenirNext-DemiBold PR",languageFont!important; */
+  font-family: vivotypeEN-Bold,Microsoft YaHei,PingFang SC,Open Sans,Arial,Hiragino Sans GB,SimSun,sans-serif;
+}
+
+.gb-lang-hk_zh .stage1 p {
+  /* font-family: AvenirNext,languageFont!important; */
+  font-family: vivotypeEN-Medium,Microsoft YaHei,PingFang SC,Open Sans,Arial,Hiragino Sans GB,SimSun,sans-serif;
+}
+
+.gb-lang-hk_zh .tws2-deep-title p,
+.gb-lang-hk_zh .tws2-ears-title p,
+.gb-lang-hk_zh .tws2-long-title p,
+.gb-lang-hk_zh .tws2-small-title p {
+  /* font-family: AvenirNext,languageFont!important; */
+  font-family: vivotypeEN-Medium,Microsoft YaHei,PingFang SC,Open Sans,Arial,Hiragino Sans GB,SimSun,sans-serif;
+}
+
+.gb-lang-hk_zh .tws2-smart .section5 .title {
+  display: none;
+}
+
+.gb-lang-hk_zh .tws2-experience .section .title .data-items ul li:last-of-type,
+.gb-lang-hk_zh .tws2-experience .section .title .data-items ul li:nth-of-type(3) {
+  display: none;
+}
+
+.gb-lang-hk_zh .tws2-experience .section .title .data-items ul li:nth-of-type(5) {
+  margin: 0;
+}
+
+.gb-lang-hk_zh .stage.stage-tips .tip-content h4 {
+  /* font-family: AvenirNext,languageFont; */
+  font-family: vivotypeEN-Bold,Microsoft YaHei,PingFang SC,Open Sans,Arial,Hiragino Sans GB,SimSun,sans-serif;
+}
+
+.gb-lang-hk_zh .stage.stage-tips .tip-content .case li {
+  /* font-family: AvenirNext,languageFont; */
+  font-family: vivotypeEN-Medium,Microsoft YaHei,PingFang SC,Open Sans,Arial,Hiragino Sans GB,SimSun,sans-serif;
+}
+.gb-lang-hk_zh .tws2-deep-title .text .vice-title,
+.gb-lang-hk_zh .tws2-ears-title .text .vice-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: vivotypeEN-Bold,Microsoft YaHei,PingFang SC,Open Sans,Arial,Hiragino Sans GB,SimSun,sans-serif;
+  margin-bottom: 6px;
+}
+@media (max-width: 1440px) {
+  .gb-lang-hk_zh .tws2-deep-title .text .vice-title,
+  .gb-lang-hk_zh .tws2-ears-title .text .vice-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 1000px) {
+  .gb-lang-hk_zh .tws2-deep-title .text .vice-title,
+  .gb-lang-hk_zh .tws2-ears-title .text .vice-title {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0 24px;
+  }
+}

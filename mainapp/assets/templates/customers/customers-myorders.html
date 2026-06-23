@@ -1,0 +1,332 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<title>SnapKart | Customers Account</title>
+		<meta charset="UTF-8">
+		<meta name="description" content=" Divisima | eCommerce Template">
+		<meta name="keywords" content="divisima, eCommerce, creative, html">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Favicon -->
+		<link href="{%static 'customers/img/favicon.ico'%}" rel="shortcut icon" />
+	
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="{%static 'customers/css/bootstrap.min.css'%}" />
+		<link rel="stylesheet" href="{%static 'customers/css/font-awesome.min.css'%}" />
+		<link rel="stylesheet" href="{%static 'customers/css/flaticon.css'%}" />
+		<link rel="stylesheet" href="{%static 'customers/css/slicknav.min.css'%}" />
+		<link rel="stylesheet" href="{%static 'customers/css/jquery-ui.min.css'%}" />
+		<link rel="stylesheet" href="{%static 'customers/css/owl.carousel.min.css'%}" />
+		<link rel="stylesheet" href="{%static 'customers/css/animate.css'%}" />
+		<link rel="stylesheet" href="{%static 'customers/css/style.css'%}" />
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> -->
+		
+	
+		<!--[if lt IE 9]>
+				  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<![endif]-->
+			<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	
+	</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 text-center text-lg-left">
+						<!-- logo -->
+						<a href="{% url 'customers-home'%}" class="site-logo">
+							 <p style="font-size: xx-large; font-weight: bold; color:deeppink;">SnapKart</p>
+	
+						</a>
+					</div>
+					<div class="col-xl-5 col-lg-5">
+						
+						<form class="header-search-form">
+							
+							<input type="text" placeholder="Search on SnapKart ....">
+							<button><i class="flaticon-search"></i></button>
+						</form>
+					</div>
+					<div class="col-xl-5 col-lg-5">
+						<div class="flex">
+							<div class="user-panel">
+								
+								<div class="up-item">
+									<div class="wishlist">
+										<i class="flaticon-heart"></i>
+										<a href="{% url 'customers-mywishlist' %}"> My WishList &nbsp;<span style="background-color:rgb(241, 56, 102); color:white; font-size: 15px; padding: 5px; border-radius: 3px; font-weight: bolder;">{{wishlist}}</span></a>
+									</div> 
+								</div>
+								<div class="up-item">
+									<div class="shopping-card">
+										<i class="flaticon-bag"></i>
+									</div>
+									<a href="{% url 'customers-mycart'%}"> Shopping Cart &nbsp;<span style="background-color:rgb(241, 56, 102); color:white; font-size: 15px; padding: 5px; border-radius: 3px; font-weight: bolder;">{{cartcount}}</span1></a>
+								</div>
+								<div class="up-item"> 
+									<img src="{%static 'customers/img/icon1.png'%}" class="ml-4" width="20px" height="20px">
+									<a href="{% url 'main-home' %}">Log Out</a>
+								</div> 
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="main-navbar">
+			<div class="container">
+				<!-- menu -->
+				<ul class="main-menu">
+					<li><a href="{% url 'customers-home'%}">Home</a></li>
+	
+					<li><a href="{% url 'customers-category'%}">Products
+						<span class="new">New</span>
+					</a>
+						
+					</li>
+					<li><a href="{% url 'customers-myprofile'%}">My Profile</a></li>
+					
+
+					<li><a href="{% url 'customers-myorders'%}">My Orders</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- Header section end -->
+
+	<!-- Page info -->
+	<section class="hero-section">
+		<div class="banner set-bg" data-setbg="{%static 'customers/img/pexel10.jpeg'%}">
+			<h4 class="py-4 text-white">ORDER LIST</h4>
+		<div class="site-pagination">
+			<a href="" class="text-white">Home /</a>
+			<a href="" class="text-white">Order List</a>
+		</div>
+		</div>
+</section>
+	<!-- Page info end -->
+
+	<section class="cart-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="cart-table card-body">
+						<h3>Orders List History</h3>
+						<div class="table-responsive text-nowrap">
+							<table class="table table-bordered">
+							<thead>
+								<tr>
+									<!-- <th class="product-th">Product</th> -->
+									<th  style="font-size:15px;">Product <br> Profile</th>
+									<th  style="font-size:15px;">Product Name</th>
+									<th style="font-size:15px;">status</th>
+
+									<th style="font-size:15px;">Review</th>
+									<!-- <th>Remove</th> -->
+									<!-- <th style="font-size:15px;">Product <br> Quantity x Price</th>
+									<th style="font-size:15px;">Final <br> Amount</th>
+									<th style="font-size:15px;">Shipping <br> Address</th>
+									<th>Order date</th>
+									<th>Product Review</th> -->
+										<th style="font-size:15px;">scan</th>
+									
+									<!-- <th class=""></th> -->
+								</tr>
+							</thead>
+							<tbody>
+
+								{% for i in s %}
+								
+									
+								<tr>
+									<td>
+										<img src="/media/{{i.order_product.product_photo1}}" name="photo" width="150px" height="100px" alt="">
+									</td>
+									<td>
+									{{i.order_product.product_name}}	
+									<a href="{% url 'customer-remove-myorders' i.order_id %}" onclick="return confirm('Are you sure want to delete the order from list');">
+										<i class="fa fa-trash mb-4" ></i>
+									</a>
+									</td>
+									<td>
+										{{i.order_seller_status}}
+									</td>
+								
+									<td>
+									<a href="{% url 'customers-productdetails' i.order_product.product_id %}" ><button class="btn btn-warning text-dark">Review</button></a>
+									</td>
+									
+									
+									<td>
+										<img src="/media/{{i.qr_photo}}" alt="">
+									</td>
+									<!-- <td>{{i.order_product_quantity}} x {{i.order_product_price}}</td>
+									<td>{{i.order_product_amount}}</td>
+									<td>{{i.order_address}}</td>
+									<td>{{i.order_date}}</td> -->
+									<!-- <td> <textarea name="orderproductreviews" cols="20" rows="5" name="orderedproductreview"></textarea> </td> -->
+
+									
+								</tr>
+								
+						
+							{% endfor %}
+							</tbody>
+						</table>
+						</div>
+						
+						</div>
+						
+						
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer section -->
+	<section class="footer-section mt-5">
+		<div class="container">
+			<h2 style="color: yellowgreen; text-align: center; font-family:sans-serif; font-size: xx-large; margin-bottom: 30px;">SNAPKART</h2>
+
+			<div class="row">
+				<div class="col-lg-3 col-sm-6" style="height: 320px;">
+					<div class="footer-widget about-widget">
+						<h2 style="color:slateblue;">About</h2>
+						<p style="color: white; font-family: sans-serif ; font-size: large;">Our's Business is
+							completely based on mobile's, headsets, earphones, buds, watches, charges, adapters, USB
+							cables, mobile back covers.</p>
+						<img src="{static 'customers/img/cards.png'%}" alt="">
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6" style="height: 320px;">
+					<div class="footer-widget about-widget">
+
+						<ul class="ml-5">
+							<h2 class="" style="color:slateblue;">Dasboard</h2>
+							<li class="">
+								<a href="{% url 'customers-home'%}"style="color: white; font-family: sans-serif ; font-size: large;">Home</a>
+							</li>
+							<li class="">
+								<a href="{% url 'customers-category'%}" style="color: white; font-family: sans-serif ; font-size: large;">Product</a>
+							</li>
+							<li class="">
+								<a href="{% url 'customers-myprofile'%}" style="color: white; font-family: sans-serif ; font-size: large;">My Profile</a>
+							</li>
+							<li class="">
+								<a href="{% url 'customers-orderlist'%}" style="color: white; font-family: sans-serif ; font-size: large;">My Order</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6" style="height: 320px;">
+					<div class="footer-widget about-widget">
+						<h2 style="color:slateblue;">Get In Touch</h2>
+						<div class="fw-latest-post-widget">
+							<div class="lp-item">
+								<div class="">
+									<h6 style="color: yellowgreen; font-family:sans-serif ; font-size: large;"> Email:
+										projects@Manacinfotech.in </h6>
+									<span style="color: white; font-family: sans-serif ; font-size: large;">+91 -8555887986</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6" style="height: 320px;">
+					<div class="footer-widget about-widget">
+						<h2 style="color:slateblue;">Address</h2>
+						<div class="fw-latest-post-widget">
+							
+							<div class="lp-item">
+								<div class="lp-content">
+									<p style="color: white; font-family: sans-serif ; font-size: large;">Address: Head
+										Office: Hyderabad</p>
+									<p style="color: white; font-family: sans-serif ; font-size: large;">Branches:
+										Hyderbad, Mumbai, Bangalore, Delhi, Kerala, Uttarpradesh.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<p class="text-white text-center mt-5" style="font-size: 15px;">Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> <a class="border-bottom text-primary"
+							href="#">Fake Products Detection</a>, All rights reserved | <br> This
+						template is made with by <a class="border-bottom text-primary"
+							href="https://Manacinfotech.in/">Manacinfotech</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<!-- Footer section end -->
+
+	
+	{% if messages %}
+        {% for message in messages %}
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+        <script>swal({
+                title: "Registered Successfully!",
+                text: "{{message}}",
+                icon: "success",
+                button: "OK",
+            });
+        </script>
+
+        {% elif message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}
+        <script>swal({
+                title: "Warning :)",
+                text: "{{message}}",
+                icon: "warning",
+                button: "OK",
+            });
+        </script>
+        {% elif message.level == DEFAULT_MESSAGE_LEVELS.INFO %}
+        <script>swal({
+                title: "error :)",
+                text: "{{message}}",
+                icon: "error",
+                button: "OK",
+            });
+        </script>
+        {% elif message.level == DEFAULT_MESSAGE_LEVELS.DANGER %}
+        <script>swal({
+                title: "error :)",
+                text: "{{message}}",
+                icon: "error",
+                button: "OK",
+            });
+        </script>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{%static 'customers/js/jquery-3.2.1.min.js'%}"></script>
+	<script src="{%static 'customers/js/bootstrap.min.js'%}"></script>
+	<script src="{%static 'customers/js/jquery.slicknav.min.js'%}"></script>
+	<script src="{%static 'customers/js/owl.carousel.min.js'%}"></script>
+	<script src="{%static 'customers/js/jquery.nicescroll.min.js'%}"></script>
+	<script src="{%static 'customers/js/jquery.zoom.min.js'%}"></script>
+	<script src="{%static 'customers/js/jquery-ui.min.js'%}"></script>
+	<script src="{%static 'customers/js/main.js'%}"></script>
+
+	</body>
+</html>

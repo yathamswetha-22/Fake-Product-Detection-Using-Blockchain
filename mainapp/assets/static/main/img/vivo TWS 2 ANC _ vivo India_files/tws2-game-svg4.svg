@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="90px" viewBox="0 0 72 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形备份 3-lg</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4D90F1" offset="0%"></stop>
+            <stop stop-color="#6BD6F9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-749.000000, -642.000000)">
+            <g id="编组-8" transform="translate(749.000000, 642.000000)">
+                <g id="编组-5" transform="translate(1.000000, 2.000000)">
+                    <g id="编组备份-3" transform="translate(30.500000, 43.000000) scale(-1, 1) translate(-30.500000, -43.000000) translate(-0.000000, 0.000000)" stroke="#FEFEFE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M52.514236,22.4937858 C53.8877185,23.1840573 54.7388907,23.8570721 55.9165068,24.9787633 C62.384932,31.1443673 62.7258845,41.4885794 56.6782092,48.0856031 L54.6784381,50.264889 C49.4432454,55.9719554 41.1394801,56.999967 34.8064686,53.1763557" id="Stroke-1"></path>
+                        <path d="M17.9273851,45.956855 L9.82432238,40.5653412 C-0.191459742,33.9042209 -3.0133858,20.2269834 3.52032818,10.0158951 C10.0540422,-0.195193176 23.4696769,-3.07214634 33.485459,3.58897401 L43.3900084,10.1761367 C53.4033724,16.837257 56.2277166,30.5144945 49.6940026,40.7255828 C46.1853354,46.2107763 40.6914056,49.5783153 34.8057432,50.4904598" id="Stroke-3"></path>
+                        <path d="M40.2276135,23.2592476 C40.2276135,15.2964724 35.0335285,9.19989552 27.1456769,9.18755505 C18.8298211,9.17770822 12.9852665,14.3054397 12.9852665,23.2592476 C12.9852665,29.8414798 18.2059506,34.7152899 18.2059506,43.3757325 L18.2059506,81.9347937 C18.2059506,84.1806414 19.9905105,86 22.1934022,86 L30.6374175,86 C32.8403092,86 34.6272872,84.1806414 34.6272872,81.9347937 L34.6272872,43.3757325 C34.6272872,34.7152899 40.2276135,31.6559078 40.2276135,23.2592476 Z" id="Stroke-5"></path>
+                    </g>
+                    <circle id="椭圆形备份-6" fill-opacity="0.3" fill="url(#linearGradient-1)" cx="48.5" cy="58.5" r="11.5"></circle>
+                    <circle id="椭圆形备份-8" fill-opacity="0.3" fill="url(#linearGradient-1)" cx="22.5" cy="58.5" r="11.5"></circle>
+                    <circle id="椭圆形备份-7" fill-opacity="0.7" fill="url(#linearGradient-1)" cx="48.5" cy="58.5" r="8.5"></circle>
+                    <circle id="椭圆形备份-9" fill-opacity="0.7" fill="url(#linearGradient-1)" cx="22.5" cy="58.5" r="8.5"></circle>
+                </g>
+                <rect id="矩形备份-3" x="0" y="0" width="72" height="90"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
